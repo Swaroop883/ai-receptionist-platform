@@ -1,0 +1,16 @@
+# Dependency folders
+node_modules/
+venv/
+__pycache__/
+
+# Environment & Secrets
+.env
+*.pem
+
+# OS/IDE junk
+.DS_Store
+.vscode/
+.idea/
+
+# Docker/DB data
+pgdata/
