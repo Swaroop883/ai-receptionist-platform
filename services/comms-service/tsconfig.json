@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                                  /* Set the JavaScript version */
+    "module": "commonjs",                                /* Specify module code generation */
+    "rootDir": "./src",                                  /* Point to your source files */
+    "outDir": "./dist",                                  /* Where the compiled code goes */
+    "strict": true,                                      /* Enable all strict type-checking options */
+    "esModuleInterop": true,                             /* Fixes the 'no default export' errors */
+    "skipLibCheck": true,                                /* Skip type checking of declaration files */
+    "forceConsistentCasingInFileNames": true,            /* Ensure file naming is consistent */
+    "moduleResolution": "node",                          /* Use Node.js style for finding modules */
+    "types": ["node"]                                    /* Include type definitions for Node.js */
+  },
+  "include": ["src/**/*"],                               /* Include everything in the src folder */
+  "exclude": ["node_modules"]                            /* Don't try to compile the library folder */
+}
