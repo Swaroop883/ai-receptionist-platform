@@ -19,9 +19,11 @@ app.post('/process-speech', async (req, res) => {
     console.log(`🧠 AI is thinking about: ${userText} with context:`, context);
 
     res.json({ aiResponse: "I am processing your request with the knowledge base." });
-  } catch (error) {
-    res.status(500).json({ error: "Brain had a hiccup." });
-  }
+  } catch (error: any) {
+    // This will print the EXACT error in your terminal
+    console.error("❌ Detailed Error:", error.message); 
+    res.status(500).json({ error: "Brain had a hiccup.", details: error.message });
+}
 });
 
 app.get('/health', (req, res) => {
